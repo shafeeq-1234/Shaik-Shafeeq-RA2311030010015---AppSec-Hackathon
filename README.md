@@ -210,6 +210,47 @@ def add_security_headers(response):
 
 ---
 
+# Repository Structure
+
+```text
+SHAIK SHAFEEQ [RA2311030010015] - APPSEC HACKATHON
+│
+├── Challenge1
+│   ├── Screenshots/
+│   ├── app_vulnerable.py
+│   ├── app.py
+│   └── REPORT.md
+│
+├── Challenge2
+│   ├── Screenshots/
+│   ├── app_vulnerable.py
+│   ├── app.py
+│   └── REPORT.md
+│
+├── Challenge3
+│   ├── Screenshots/
+│   ├── app_vulnerable.py
+│   ├── app.py
+│   └── REPORT.md
+│
+├── Challenge4
+│   ├── Screenshots/
+│   ├── app_vulnerable.py
+│   ├── app.py
+│   └── REPORT.md
+│
+├── Challenge5
+│   ├── Screenshots/
+│   ├── app_vulnerable.py
+│   ├── app.py
+│   └── REPORT.md
+│
+├── README.md
+├── REPORT.md
+├── users.db
+└── Shaik Shafeeq.docx
+```
+
 # Author
 
 **Shaik Shafeeq**
