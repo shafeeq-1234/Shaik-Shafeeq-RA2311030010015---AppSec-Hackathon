@@ -1,0 +1,39 @@
+# .github/workflows/pipeline.yml
+
+name: AppSec Scan
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Tools
+        run: |
+          pip install bandit safety semgrep
+
+      - name: Run Bandit
+        run: |
+          bandit -r challenge1
+          bandit -r challenge2
+          bandit -r challenge3
+          bandit -r challenge4
+          bandit -r challenge5
+
+      - name: Run Semgrep
+        run: |
+          semgrep --config=auto .
+
+      - name: Run Safety
+        run: |
+          safety scan
